@@ -4,12 +4,12 @@ import mysql.connector
 app = Flask(_name_)
 
 # MySQL configuration
-db = mysql.connector.connect(
+'''db = mysql.connector.connect(
   host="your-rds-endpoint",
   user="your-username",
   password="your-password",
   database="your-database"
-)
+)'''
 
 @app.route('/')
 def index():
