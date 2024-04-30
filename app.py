@@ -1,15 +1,5 @@
 from flask import Flask, render_template, request
-import mysql.connector
-
-app = Flask(_name_)
-
-# MySQL configuration
-'''db = mysql.connector.connect(
-  host="your-rds-endpoint",
-  user="your-username",
-  password="your-password",
-  database="your-database"
-)'''
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -28,5 +18,5 @@ def submit():
 
     return 'Data submitted successfully!'
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
